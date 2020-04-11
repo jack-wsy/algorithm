@@ -52,6 +52,9 @@ public class InsertSort {
 		 * 用来做验证的算法
 		 * 系统提供的绝对正确的算法
 		 */
+		if (arr == null) {
+			return arr;
+		}
 		Arrays.sort(arr);
 		return arr;
 	}
@@ -86,6 +89,9 @@ public class InsertSort {
 	}
 	
 	public static void printArray(int[] arr) {
+		if (arr == null) {
+			return;
+		}
 		for (int i : arr) {
 			System.out.print(i+"  ");
 		}
