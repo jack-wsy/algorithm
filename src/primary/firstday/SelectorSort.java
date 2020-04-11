@@ -1,13 +1,17 @@
 package primary.firstday;
 
+import java.util.Arrays;
+
 public class SelectorSort {
 	
 	public static void main(String[] args) {
 		int[] arr = {1, 2, 4, 6, 5};
 		selectSort(arr);
+//		Arrays.sort(arr);
 		for(int i : arr) {
 			System.out.print(i);
 		}
+		
 		
 	}
 	
