@@ -19,7 +19,7 @@ public class Holland {
 		int num = 10;
 		int[] arr = InsertSort.generateRandomArray(size, value);
 		InsertSort.printArray(arr);
-		finishedHolland(arr, num, 0, arr.length-1);
+		InsertSort.printArray(finishedHolland(arr, num, 0, arr.length-1));
 		System.out.println();
 		InsertSort.printArray(arr);
 	}
@@ -49,9 +49,9 @@ public class Holland {
 		}
 	}
 	
-	private static void finishedHolland(int[] arr, int num, int l, int r) {
+	private static int[] finishedHolland(int[] arr, int num, int l, int r) {
 		if (arr == null) {
-			return;
+			return arr;
 		}
 		int p1 = l-1;
 		int p2 = r+1;
@@ -65,6 +65,7 @@ public class Holland {
 				Bubbling.swap(arr, --p2, l);
 			}
 		}
+		return new int[] {p1, p2};
 	}
 	
 	private static void finishedSetHolland(int[] arr, int num) {
