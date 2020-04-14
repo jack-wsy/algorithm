@@ -1,4 +1,4 @@
-package primary.third;
+package primary.second;
 
 import primary.firstday.Bubbling;
 import primary.firstday.InsertSort;
