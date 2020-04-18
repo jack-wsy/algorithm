@@ -6,6 +6,9 @@ public class GetMinStack {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		/*
+		 * pop、push、getMin操作的时间复杂度都是O(1)
+		 */
 		MyStack myStack = new MyStack();
 		myStack.push(3);
 		myStack.push(4);
