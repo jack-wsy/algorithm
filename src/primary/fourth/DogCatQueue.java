@@ -18,12 +18,12 @@ public class DogCatQueue {
 		dogAndCatQueue.add(dog1);
 		dogAndCatQueue.add(cat2);
 		
-//		while (!dogAndCatQueue.isEmpty()) {
-//			System.out.println(dogAndCatQueue.pollAll().getPetType());
-//		}
-//		while (!dogAndCatQueue.isDogEmpty()) {
-//			System.out.println(dogAndCatQueue.pollDog().getPetType());
-//		}
+		while (!dogAndCatQueue.isEmpty()) {
+			System.out.println(dogAndCatQueue.pollAll().getPetType());
+		}
+		while (!dogAndCatQueue.isDogEmpty()) {
+			System.out.println(dogAndCatQueue.pollDog().getPetType());
+		}
 		while (!dogAndCatQueue.isCatEmpty()) {
 			System.out.println(dogAndCatQueue.pollCat().getPetType());
 		}
