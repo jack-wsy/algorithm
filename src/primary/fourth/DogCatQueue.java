@@ -4,6 +4,30 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class DogCatQueue {
+	
+	public static void main(String[] args) {
+		Dog dog1 = new Dog();
+		Cat cat1 = new Cat();
+		Dog dog2 = new Dog();
+		Cat cat2 = new Cat();
+		
+		DogAndCatQueue dogAndCatQueue = new DogAndCatQueue();
+		dogAndCatQueue.add(dog1);
+		dogAndCatQueue.add(dog2);
+		dogAndCatQueue.add(cat1);
+		dogAndCatQueue.add(dog1);
+		dogAndCatQueue.add(cat2);
+		
+//		while (!dogAndCatQueue.isEmpty()) {
+//			System.out.println(dogAndCatQueue.pollAll().getPetType());
+//		}
+//		while (!dogAndCatQueue.isDogEmpty()) {
+//			System.out.println(dogAndCatQueue.pollDog().getPetType());
+//		}
+		while (!dogAndCatQueue.isCatEmpty()) {
+			System.out.println(dogAndCatQueue.pollCat().getPetType());
+		}
+	}
 
 	public static class Pet{
 		private String type;
@@ -17,19 +41,19 @@ public class DogCatQueue {
         }
 	}
 	
-	public class Dog extends Pet{
+	public static class Dog extends Pet{
         public Dog(){
             super("dog");
         }
     }
     
-    public class Cat extends Pet{
+    public static class Cat extends Pet{
         public Cat(){
             super("cat");
         }
     }
     
-    public class PetEntryQueue{
+    public static class PetEntryQueue{
     	private Pet pet;
     	private long count;
     	
@@ -48,7 +72,7 @@ public class DogCatQueue {
     
     }
     
-    public class DogAndCatQueue{
+    public static class DogAndCatQueue{
     	private Queue<PetEntryQueue> dogQueue;
     	private Queue<PetEntryQueue> catQueue; 
     	long count;
