@@ -83,10 +83,10 @@ public class ReverseList {
 		return pre;
 	}
 	
-	public static void printLinkedList(Node head) {
-		while (head != null) {
-			System.out.print(head.value + " ");
-			head = head.next;
+	public static void printLinkedList(Node node1) {
+		while (node1 != null) {
+			System.out.print(node1.value + " ");
+			node1 = node1.next;
 		}
 		System.out.println();
 	}
