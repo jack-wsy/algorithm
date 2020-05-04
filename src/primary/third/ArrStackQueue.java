@@ -7,6 +7,7 @@ public class ArrStackQueue {
 		/*
 		 * 1. 使用数组实现栈结构
 		 */
+		System.out.println(1/2);
 
 	}
 	public static class ArrayStack{
